@@ -1,0 +1,149 @@
+{
+    "players": [
+        {
+            "id": 1,
+            "name": "malek amgad fathy",
+            "gamename": "fhgfh",
+            "game": "valorant",
+            "role": "player",
+            "image": "http://google.com",
+            "facebook": "http://google.com",
+            "twitter": "http://google.com",
+            "instagram": ""
+        },
+        {
+            "id": 2,
+            "name": "Mohamed Suliman",
+            "gamename": "SXL",
+            "game": "valorant",
+            "role": "player",
+            "image": "http://google.com",
+            "facebook": "http://google.com",
+            "twitter": "http://google.com",
+            "instagram": ""
+        },
+        {
+            "id": 3,
+            "name": "Ahmed Gamal",
+            "gamename": "Gemy",
+            "game": "valorant",
+            "role": "player",
+            "image": "http://google.com",
+            "facebook": "http://google.com",
+            "twitter": "http://google.com",
+            "instagram": ""
+        },
+        {
+            "id": 4,
+            "name": "Ahmed Shauqi",
+            "gamename": "Lonesome",
+            "game": "valorant",
+            "role": "player",
+            "image": "http://google.com",
+            "facebook": "http://google.com",
+            "twitter": "http://google.com",
+            "instagram": ""
+        },
+        {
+            "id": 5,
+            "name": "Zeyad Hossam",
+            "gamename": "ZeYax",
+            "game": "valorant",
+            "role": "player",
+            "image": "http://google.com",
+            "facebook": "http://google.com",
+            "twitter": "http://google.com",
+            "instagram": ""
+        },
+        {
+            "id": 6,
+            "name": "Yousef Mohamed",
+            "gamename": "Hunter",
+            "game": "valorant",
+            "role": "player",
+            "image": "http://google.com",
+            "facebook": "http://google.com",
+            "twitter": "http://google.com",
+            "instagram": ""
+        }
+    ],
+    "results": [
+        {
+            "id": 1,
+            "rival": "Anubis",
+            "rivallogo": "https://www.anubisgaming.com/content/uploads/2022/11/main-home-logo-2.png",
+            "date": "22/2/2022",
+            "twitch": "http://google.com",
+            "youtube": "http://google.com",
+            "competition": "Qlash tournament",
+            "status": "result",
+            "state": "win",
+            "visscore": 3,
+            "rivalscore": 2
+        },
+        {
+            "id": 2,
+            "rival": "Anubis",
+            "rivallogo": "https://www.anubisgaming.com/content/uploads/2022/11/main-home-logo-2.png",
+            "date": "25/2/2022",
+            "twitch": "http://google.com",
+            "youtube": "http://google.com",
+            "competition": "IAC",
+            "status": "result",
+            "state": "loss",
+            "visscore": 1,
+            "rivalscore": 3
+        },
+        {
+            "id": 3,
+            "rival": "Ra'ad",
+            "rivallogo": "https://www.anubisgaming.com/content/uploads/2022/teams/iac/RA_AD.png",
+            "date": "22/3/2022",
+            "twitch": "http://google.com",
+            "youtube": "http://google.com",
+            "competition": "Qlash tournament",
+            "status": "result",
+            "state": "loss",
+            "visscore": 2,
+            "rivalscore": 3
+        },
+        {
+            "id": 4,
+            "rival": "3BL",
+            "rivallogo": "https://www.anubisgaming.com/content/uploads/2022/teams/iac/3BL%20Esports.png",
+            "date": "22/4/2022",
+            "twitch": "http://google.com",
+            "youtube": "http://google.com",
+            "competition": "Qlash tournament",
+            "status": "result",
+            "state": "win",
+            "visscore": 3,
+            "rivalscore": 0
+        },
+        {
+            "id": 5,
+            "rival": "Fox Gaming",
+            "rivallogo": "https://www.anubisgaming.com/content/uploads/2022/teams/iac/Fox%20Gaming.png",
+            "date": "22/2/2022",
+            "twitch": "http://google.com",
+            "youtube": "http://google.com",
+            "competition": "Qlash tournament",
+            "status": "upcoming",
+            "state": "unknown",
+            "visscore": "-",
+            "rivalscore": "-"
+        }
+    ],
+    "esportTeams": [
+        {
+            "id": 1,
+            "game": "valorant",
+            "image": "https://wallpaperaccess.com/full/3911016.png"
+        },
+        {
+            "id": 2,
+            "game": "League of Legends",
+            "image": "https://i.pinimg.com/originals/53/48/84/5348848cd024f0fe06b5f126a5034250.jpg"
+        }
+    ]
+}
