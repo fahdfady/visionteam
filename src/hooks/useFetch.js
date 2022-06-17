@@ -4,7 +4,7 @@ const useFetch = (url) => {
   const [data, setData] = useState(null);
   const [isPending, setIsPending] = useState(true);
   const [error, setError] = useState(null);
-  const apiURL = "http://localhost:8000";
+  const apiURL = "https://62ac941c9fa81d00a7b54612.mockapi.io";
   useEffect(() => {
     const abortCont = new AbortController();
 
