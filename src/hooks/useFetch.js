@@ -1,45 +1,40 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const useFetch = (url) => {
-    const [data, setData] = useState(null);
-    const [isPending, setIsPending] = useState(true);
-    const [error, setError] = useState(null);
+  const [data, setData] = useState(null);
+  const [isPending, setIsPending] = useState(true);
+  const [error, setError] = useState(null);
+  const apiURL = "https://62ac941c9fa81d00a7b54612.mockapi.io";
+  useEffect(() => {
+    const abortCont = new AbortController();
 
-    useEffect(() => {
-        const abortCont = new AbortController();
+    fetch(apiURL + url, { signal: abortCont.signal })
+      .then((res) => {
+        if (!res.ok) {
+          throw Error("Couldn't fetch data for that resource");
+        }
 
-            fetch(url, { signal: abortCont.signal })
-                .then(res => {
+        return res.json();
+      })
+      .then((data) => {
+        setData(data);
+        setIsPending(false);
+        setError(null);
+      })
 
-                    if (!res.ok) {
-                        throw Error("Couldn't fetch data for that resource");
-                    }
+      .catch((err) => {
+        if (err.name === "AbortError") {
+          console.log("fetch aborted");
+        } else {
+          setIsPending(false);
+          setError(err.message);
+        }
+      });
 
-                    return res.json();
-                })
-                .then(data => {
-                    setData(data);
-                    setIsPending(false);
-                    setError(null);
-                })
+    // return () => abortCont.abort();
+  }, [url]);
 
-                .catch(err => {
-                    if (err.name === "AbortError") {
-                        console.log("fetch aborted");
-                    }
-                    else {
-                        setIsPending(false);
-                        setError(err.message);
-                    }
-
-                })
-
-
-        // return () => abortCont.abort();
-
-    }, [url]);
-
-    return { data, isPending, error }
-}
+  return { data, isPending, error };
+};
 
 export default useFetch;
