@@ -1,8 +1,12 @@
+import logo from '../assets/logo.svg'
+
 // Import Swiper React components
+import { Navigation, Keyboard } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/keyboard';
 
 
 const Results = ({ results }) => {
@@ -22,6 +26,8 @@ const Results = ({ results }) => {
             <Swiper
                 slidesPerView={ 1 }
                 navigation
+                keyboard
+                modules={ [Navigation, Keyboard] }
             >
 
 
@@ -47,7 +53,7 @@ const Results = ({ results }) => {
                             <div className="column score">
                                 <div className="home-team team">
                                     <div className="team-logo">
-                                        <img src="./logo.webp" />
+                                        <img src={logo} />
                                     </div>
                                     <div className="team-name">Vision</div>
                                 </div>

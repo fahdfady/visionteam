@@ -1,11 +1,15 @@
 import Results from "./components/Results";
-import Teams from "./Teamspreview";
+import Store from "./components/store";
+import Teams from "./components/Teamspreview";
+import Trophies from "./components/Trophies";
 
 import useFetch from "./hooks/useFetch";
 
 const Home = () => {
-    const { data: results, isPending, error } = useFetch("http://localhost:3001/results");
-    const { data: esportteams } = useFetch("http://localhost:3001/esportTeams");
+    const { data: results, isPending, error } = useFetch("results");
+    const { data: esportteams } = useFetch("esportTeams");
+    const { data: trophies } = useFetch("trophies");
+    const { data: store } = useFetch("store");
 
 
     return (
@@ -27,9 +31,13 @@ const Home = () => {
 
             { isPending && <div>Loading...</div> }
 
+            { store && <Store store={ store } /> }
+
             { results && <Results results={ results } /> }
 
             { esportteams && <Teams teams={ esportteams } /> }
+
+            { trophies && <Trophies trophies={ trophies } /> }
 
         </div>
     )

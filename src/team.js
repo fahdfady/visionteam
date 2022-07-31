@@ -1,26 +1,26 @@
 import { useParams } from "react-router-dom";
 import useFetch from "./hooks/useFetch";
-import avatar from './avatar.webp'
+import avatar from './assets/avatar.webp'
 
 const Team = () => {
 
-    const { id } = useParams();
-    const { data: esportteams, error, isPending } = useFetch('http://localhost:3001/esportteams/' + id);
-    const { data: players } = useFetch('http:/  /localhost:3001/players/')
+    const { gamename } = useParams();
+    const { data: players, error, isPending } = useFetch(`players?game=${gamename}`);
 
     return (
         <section className="team">
+            <div className="section-title">
+                <h2 >
+                    our champions in <span> { gamename } </span>
+                </h2>
+            </div>
             { isPending && <div>Loading...</div> }
 
             { error && <div>{ error }</div> }
 
             { players && (
-                <div className="container">
-                    <div className="section-title">
-                        <h2 >
-                            our champions in <span> { esportteams.game } </span>
-                        </h2>
-                    </div>
+                <div className="container-full">
+
                     <div className="players-list">
                         { players.map((player) => (
                             <a href="#0" className="player-card" key={ player.id }>
@@ -30,6 +30,7 @@ const Team = () => {
 
                                 <div className="player-list-content">
                                     <h3 className="player-name">
+                                        <span>vis </span>
                                         { player.gamename }
                                     </h3>
 

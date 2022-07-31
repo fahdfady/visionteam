@@ -3,9 +3,9 @@
         {
             "id": 1,
             "name": "malek amgad fathy",
-            "gamename": "fhgfh",
+            "gamename": "Ace",
             "game": "valorant",
-            "role": "player",
+            "role": "playercontent",
             "image": "http://google.com",
             "facebook": "http://google.com",
             "twitter": "http://google.com",
@@ -65,6 +65,28 @@
             "facebook": "http://google.com",
             "twitter": "http://google.com",
             "instagram": ""
+        },
+        {
+            "id": 7,
+            "name": "Yousef Mohamed",
+            "gamename": "Hunter",
+            "game": "league of legends",
+            "role": "player",
+            "image": "http://google.com",
+            "facebook": "http://google.com",
+            "twitter": "http://google.com",
+            "instagram": ""
+        },
+        {
+            "id": 8,
+            "name": "Yousef Mohamed",
+            "gamename": "Hunter",
+            "game": "league of legends",
+            "role": "player",
+            "image": "http://google.com",
+            "facebook": "http://google.com",
+            "twitter": "http://google.com",
+            "instagram": ""
         }
     ],
     "results": [
@@ -72,7 +94,7 @@
             "id": 1,
             "rival": "Anubis",
             "rivallogo": "https://www.anubisgaming.com/content/uploads/2022/11/main-home-logo-2.png",
-            "date": "22/2/2022",
+            "date": "22/4/2022",
             "twitch": "http://google.com",
             "youtube": "http://google.com",
             "competition": "Qlash tournament",
@@ -142,8 +164,218 @@
         },
         {
             "id": 2,
-            "game": "League of Legends",
+            "game": "league of legends",
             "image": "https://i.pinimg.com/originals/53/48/84/5348848cd024f0fe06b5f126a5034250.jpg"
+        }
+    ],
+    "trophies": [
+        {
+            "id": 1,
+            "game": "valorant",
+            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
+            "competition": "IAC",
+            "season": "season 2",
+            "place": "2nd place"
+        },
+        {
+            "id": 2,
+            "game": "league of legends",
+            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
+            "competition": "Qlash",
+            "season": "2022",
+            "place": "1st place"
+        },
+        {
+            "id": 3,
+            "game": "valorant",
+            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
+            "competition": "IAC",
+            "season": "season 2",
+            "place": "2nd place"
+        },
+        {
+            "id": 4,
+            "game": "league of legends",
+            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
+            "competition": "Qlash",
+            "season": "2022",
+            "place": "1st place"
+        },
+        {
+            "id": 5,
+            "game": "valorant",
+            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
+            "competition": "IAC",
+            "season": "season 2",
+            "place": "2nd place"
+        },
+        {
+            "id": 6,
+            "game": "league of legends",
+            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
+            "competition": "Qlash",
+            "season": "2022",
+            "place": "1st place"
+        },
+        {
+            "id": 7,
+            "game": "league of legends",
+            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
+            "competition": "Qlash",
+            "season": "2022",
+            "place": "1st place"
+        },
+        {
+            "id": 8,
+            "game": "valorant",
+            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
+            "competition": "IAC",
+            "season": "season 2",
+            "place": "2nd place"
+        },
+        {
+            "id": 9,
+            "game": "league of legends",
+            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
+            "competition": "Qlash",
+            "season": "2022",
+            "place": "1st place"
+        }
+    ],
+    "Achievements": [
+        {
+            "id": 1,
+            "name": "teams",
+            "number": "2"
+        },
+        {
+            "id": 2,
+            "name": "1st places",
+            "number": "3"
+        },
+        {
+            "id": 3,
+            "name": "rewards",
+            "number": "5"
+        },
+        {
+            "id": 4,
+            "name": "fans",
+            "number": "3K"
+        }
+    ],
+    "social": [
+        {
+            "id": 1,
+            "name": "facebook",
+            "followers": "200",
+            "link": "https://www.google.com"
+        },
+        {
+            "id": 2,
+            "name": "twitter",
+            "followers": "200",
+            "link": "https://www.google.com"
+        },
+        {
+            "id": 3,
+            "name": "instagram",
+            "followers": "18k",
+            "link": "https://www.google.com"
+        },
+        {
+            "id": 4,
+            "name": "twitch",
+            "followers": "2k",
+            "link": "https://www.google.com"
+        },
+        {
+            "id": 5,
+            "name": "youtube",
+            "followers": "200",
+            "link": "https://www.google.com"
+        },
+        {
+            "id": 6,
+            "name": "tiktok",
+            "followers": "200",
+            "link": "https://www.google.com"
+        },
+        {
+            "id": 7,
+            "name": "discord",
+            "followers": "200",
+            "link": "https://www.google.com"
+        }
+    ],
+    "store": [
+        {
+            "id": 1,
+            "product": "merch",
+            "type": "t-shirt",
+            "price": "300 EGP",
+            "image": "https://i.ibb.co/QnFbdT8/product.webp"
+        },
+        {
+            "id": 2,
+            "product": "action figure",
+            "type": "figure",
+            "price": "500 EGP",
+            "image": "https://i.ibb.co/QnFbdT8/product.webp"
+        },
+        {
+            "id": 3,
+            "product": "merch",
+            "type": "t-shirt",
+            "price": "300 EGP",
+            "image": "https://i.ibb.co/QnFbdT8/product.webp"
+        },
+        {
+            "id": 4,
+            "product": "action figure",
+            "type": "figure",
+            "price": "500 EGP",
+            "image": "https://i.ibb.co/QnFbdT8/product.webp"
+        },
+        {
+            "id": 5,
+            "product": "merch",
+            "type": "t-shirt",
+            "price": "300 EGP",
+            "image": "https://i.ibb.co/QnFbdT8/product.webp"
+        },
+        {
+            "id": 6,
+            "product": "action figure",
+            "type": "figure",
+            "price": "500 EGP",
+            "image": "https://i.ibb.co/QnFbdT8/product.webp"
+        }
+    ],
+    "positions": [
+        {
+            "id": 1,
+            "name": "designer",
+            "remaining": "3",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum molestiae ut quasi quibusdam corporis maiores nisi."
+        },
+        {
+            "id": 2,
+            "name": "designer",
+            "remaining": "2",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum molestiae ut quasi quibusdam corporis maiores nisi."
+        },
+        {
+            "id": 3,
+            "name": "designer",
+            "remaining": "4",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum molestiae ut quasi quibusdam corporis maiores nisi."
+        },
+        {
+            "id": 4,
+            "name": "designer",
+            "remaining": "-",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum molestiae ut quasi quibusdam corporis maiores nisi."
         }
     ]
 }
