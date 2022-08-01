@@ -19,8 +19,8 @@ const Teams = ({ teams }) => {
             </div>
 
             <Swiper 
-                spaceBetween={ 50 }
-                slidesPerView={ 3 }
+                // spaceBetween={ 0 }
+                slidesPerView={ 4 }
             >
 
                 { teams.map((team) => (
