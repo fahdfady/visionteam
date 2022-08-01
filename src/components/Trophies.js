@@ -22,9 +22,8 @@ const Trophies = ({ trophies }) => {
             <div className="layer">
 
                 <Swiper
-
-                    loop={ true }
-                    slidesPerView={ 5 }
+                    
+                    slidesPerView={ 4 }
                 >
 
                     { trophies &&

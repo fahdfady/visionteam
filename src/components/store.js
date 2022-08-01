@@ -20,16 +20,16 @@ const Store = ({ store }) => {
                 slidesPerView={ 1 }
                 navigation
                 keyboard
-                scrollbar={{ draggable: false }}
+                scrollbar={ { draggable: false } }
                 pagination={ { clickable: true } }
             >
                 { store && store.map((product) => (
 
                     <SwiperSlide key={ product.id }>
 
-                        <a href="#0">
+                        <a href="#0" title={ product.name }>
                             <div className="image-container">
-                                <img src={ product.image } alt="" />
+                                <img src={ product.image } alt={ product.name } />
                             </div>
                         </a>
 

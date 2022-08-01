@@ -1,6 +1,6 @@
 import './style/App.css';
 import './style/all.min.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './components/navbar';
 import Home from './home';
 import Team from './team';
@@ -13,7 +13,7 @@ function App() {
 
 
   return (
-    <Router>
+    <BrowserRouter>
       <div className="page-container">
 
         <div className="not-footer">
@@ -21,37 +21,26 @@ function App() {
           <Navbar />
 
           <main className="page-body">
-            <Switch>
+            <Routes>
 
+              <Route index element={ <Home /> } />
 
-              <Route exact path="/">
-                <Home />
-              </Route>
+              <Route exact path="about" element={ <About /> } />
 
-              <Route exact path="/about">
-                <About />
-              </Route>
+              <Route exact path="teams" element={ <TeamsPage /> } />
 
-              <Route exact path="/teams">
-                <TeamsPage />
-              </Route>
+              <Route exact path="careers" element={ <Careers /> } />
 
-              <Route exact path="/careers">
-                <Careers />
-              </Route>
+              <Route exact path="/team/:gamename" element={ <Team /> } />
 
-              <Route exact path="/team/:gamename">
-                <Team />
-              </Route>
-
-            </Switch>
+            </Routes>
 
           </main>
         </div>
 
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   )
 }
 

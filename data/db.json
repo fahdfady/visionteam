@@ -166,6 +166,11 @@
             "id": 2,
             "game": "league of legends",
             "image": "https://i.pinimg.com/originals/53/48/84/5348848cd024f0fe06b5f126a5034250.jpg"
+        },
+        {
+            "id": 3,
+            "game": "league of legends",
+            "image": "https://i.pinimg.com/originals/53/48/84/5348848cd024f0fe06b5f126a5034250.jpg"
         }
     ],
     "trophies": [
@@ -192,54 +197,6 @@
             "competition": "IAC",
             "season": "season 2",
             "place": "2nd place"
-        },
-        {
-            "id": 4,
-            "game": "league of legends",
-            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
-            "competition": "Qlash",
-            "season": "2022",
-            "place": "1st place"
-        },
-        {
-            "id": 5,
-            "game": "valorant",
-            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
-            "competition": "IAC",
-            "season": "season 2",
-            "place": "2nd place"
-        },
-        {
-            "id": 6,
-            "game": "league of legends",
-            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
-            "competition": "Qlash",
-            "season": "2022",
-            "place": "1st place"
-        },
-        {
-            "id": 7,
-            "game": "league of legends",
-            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
-            "competition": "Qlash",
-            "season": "2022",
-            "place": "1st place"
-        },
-        {
-            "id": 8,
-            "game": "valorant",
-            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
-            "competition": "IAC",
-            "season": "season 2",
-            "place": "2nd place"
-        },
-        {
-            "id": 9,
-            "game": "league of legends",
-            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
-            "competition": "Qlash",
-            "season": "2022",
-            "place": "1st place"
         }
     ],
     "Achievements": [
@@ -314,42 +271,49 @@
             "product": "merch",
             "type": "t-shirt",
             "price": "300 EGP",
-            "image": "https://i.ibb.co/QnFbdT8/product.webp"
+            "image": "https://i.ibb.co/g4bHtcs/Bandana.png"
         },
         {
             "id": 2,
             "product": "action figure",
             "type": "figure",
             "price": "500 EGP",
-            "image": "https://i.ibb.co/QnFbdT8/product.webp"
+            "image": "https://i.ibb.co/kBCrMDS/Hoodie1.png"
         },
         {
             "id": 3,
             "product": "merch",
             "type": "t-shirt",
             "price": "300 EGP",
-            "image": "https://i.ibb.co/QnFbdT8/product.webp"
+            "image": "https://i.ibb.co/0XG871b/Cap.png"
         },
         {
             "id": 4,
             "product": "action figure",
             "type": "figure",
             "price": "500 EGP",
-            "image": "https://i.ibb.co/QnFbdT8/product.webp"
+            "image": "https://i.ibb.co/S67JrPx/Ice-Cap.png"
         },
         {
             "id": 5,
             "product": "merch",
             "type": "t-shirt",
             "price": "300 EGP",
-            "image": "https://i.ibb.co/QnFbdT8/product.webp"
+            "image": "https://i.ibb.co/dmG6VMQ/Jersey1.png"
         },
         {
             "id": 6,
             "product": "action figure",
             "type": "figure",
             "price": "500 EGP",
-            "image": "https://i.ibb.co/QnFbdT8/product.webp"
+            "image": "https://i.ibb.co/kGRnw50/Jersey3.png"
+        },
+        {
+            "id": 7,
+            "product": "action figure",
+            "type": "figure",
+            "price": "500 EGP",
+            "image": "https://i.ibb.co/CtpQ2qG/Jersey2.png"
         }
     ],
     "positions": [

@@ -2,8 +2,8 @@
 :root {
   --background-color: #363636;
   --secondary-background-color: #4d2323;
-  --secondary-color: #990000;
-  --primary-color: #FF894C;
+  --secondary-color: #7b4400;
+  --primary-color: #efc87b;
   --third-color: #F8F8F8;
 }
 
@@ -132,6 +132,17 @@ header.page-header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 20px;
+}
+
+header.page-header .logo a img {
+  width: 120px;
+  height: unset;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 header.page-header nav {
@@ -177,22 +188,8 @@ header.page-header nav ul li a:hover {
   color: var(--primary-color);
 }
 
-header.page-header nav ul li.logo {
-  margin-top: 10px;
-}
-
-header.page-header nav ul li.logo a img {
-  width: 100px;
-  height: unset;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  pointer-events: none;
-}
-
 .page-body .home section {
-  height: 100vh;
+  height: unset;
   padding: 0px 12px;
   position: relative;
 }
@@ -208,7 +205,7 @@ header.page-header nav ul li.logo a img {
 .page-body section.banner {
   width: 100%;
   position: relative;
-  height: 90vh;
+  height: 90vh !important;
   padding: 0px;
 }
 
@@ -217,6 +214,7 @@ header.page-header nav ul li.logo a img {
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom;
+  background-repeat: no-repeat;
   position: relative;
   height: 100%;
 }
@@ -304,7 +302,7 @@ header.page-header nav ul li.logo a img {
 }
 
 .page-body section.results {
-  background: linear-gradient(176deg, #a8552d, #a56746);
+  background: linear-gradient(170deg, #d8b775, #a18f61);
   padding: 16px;
   width: 100%;
   height: 500px;
@@ -551,12 +549,10 @@ header.page-header nav ul li.logo a img {
 }
 
 .page-body section.teams .swiper .swiper-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
 }
 
 .page-body section.teams .swiper .swiper-slide {
@@ -590,7 +586,7 @@ header.page-header nav ul li.logo a img {
 .page-body section.team .players-list .player-card {
   position: relative;
   width: calc(25% - 30px);
-  height: 480px;
+  height: unset;
   -webkit-clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
           clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
   display: -webkit-box;
@@ -690,7 +686,7 @@ header.page-header nav ul li.logo a img {
 }
 
 .page-body section.trophies {
-  height: 70vh;
+  height: unset;
   text-align: center;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
           clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
@@ -715,19 +711,14 @@ header.page-header nav ul li.logo a img {
 }
 
 .page-body section.trophies .swiper {
-  padding: 18px 0px;
+  padding: 80px 0px;
 }
 
 .page-body section.trophies .swiper-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
 }
 
 .page-body section.trophies .swiper-slide {
@@ -825,7 +816,7 @@ header.page-header nav ul li.logo a img {
   height: 70px;
   border-radius: 100%;
   content: "";
-  background: #614435;
+  background: #675c45;
   right: -15px;
   top: 12px;
   z-index: -1;
@@ -887,7 +878,7 @@ header.page-header nav ul li.logo a img {
 }
 
 .page-body section.community {
-  height: 55vh;
+  min-height: 55vh;
   text-align: center;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
           clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
@@ -912,6 +903,8 @@ header.page-header nav ul li.logo a img {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 10px;
   width: 70%;
   margin: auto;
@@ -1020,7 +1013,7 @@ header.page-header nav ul li.logo a img {
 
 .team-list,
 .players-list {
-  height: 550px;
+  height: 100%;
   position: relative;
 }
 
@@ -1048,15 +1041,15 @@ header.page-header nav ul li.logo a img {
 .player-card:hover .team-list-content h3 {
   color: var(--primary-color);
   text-shadow: 1px 1px 3px #000;
-  -webkit-transform: translateY(-36px) translate(4px);
-          transform: translateY(-36px) translate(4px);
+  -webkit-transform: translateY(-36px);
+          transform: translateY(-36px);
 }
 
 .team-list-card:hover .btn,
 .player-card:hover .btn {
   opacity: 1;
-  -webkit-transform: translateY(-36px) translate(4px);
-          transform: translateY(-36px) translate(4px);
+  -webkit-transform: translateY(-36px);
+          transform: translateY(-36px);
 }
 
 .team-list-img,
@@ -1320,6 +1313,90 @@ footer.page-footer ul.social-media li a:hover {
   .container-xl,
   .container-xxl {
     max-width: 1320px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .page-body .home section {
+    min-height: 40vh;
+    height: unset;
+  }
+  .page-body section.results {
+    min-height: unset;
+    height: initial;
+  }
+  .page-body section.community .socials {
+    width: 90%;
+  }
+  .page-body section.community .socials .social .social-icon {
+    width: 88px;
+    height: 88px;
+    font-size: 54px;
+  }
+  .page-body section.achievements .achievements-list {
+    width: 90%;
+  }
+  .page-body section.team .players-list .player-card .player-list-content .player-name {
+    font-size: 30px;
+  }
+  .page-body section.team .players-list .player-card .player-socials ul {
+    gap: 6px;
+  }
+  .page-body section.team .players-list .player-card .player-socials ul li a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-body .section-title h2 {
+    font-size: 40px;
+  }
+  .page-body .section-title .section-subtitle {
+    font-size: 14px;
+  }
+  .page-body section.stories .story .story-icon {
+    font-size: 70px;
+  }
+  .page-body section.stories .story .story-icon::before {
+    width: 60px;
+    height: 60px;
+  }
+  .page-body section.stories .story p {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  .page-body section.trophies .trophie .competition-image {
+    width: 120px;
+    height: 120px;
+  }
+  .page-body section.trophies .trophie h3 {
+    font-size: 20px;
+  }
+  .page-body section.trophies .trophie p {
+    font-size: 14px;
+  }
+  .page-body section.team .players-list .player-card {
+    width: calc(33% - 24px);
+  }
+  .page-body section.team .players-list .player-card .player-list-content .player-name {
+    font-size: 26px;
+  }
+  .page-body section.team .players-list .player-card .player-list-content .badge {
+    padding: 2px 18px;
+    font-size: 12px;
+  }
+  .page-body section.team .players-list .player-card .player-socials ul {
+    gap: 6px;
+  }
+  .page-body section.team .players-list .player-card .player-socials ul li a {
+    font-size: 14px;
+  }
+  .team-list-content h3,
+  .player-list-content h3 {
+    font-size: 20px;
+  }
+  .positions .position .position-description {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=App.css.map */
