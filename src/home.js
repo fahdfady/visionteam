@@ -6,10 +6,11 @@ import Trophies from "./components/Trophies";
 import useFetch from "./hooks/useFetch";
 
 const Home = () => {
-    const { data: results, isPending, error } = useFetch("results");
-    const { data: esportteams } = useFetch("esportTeams");
-    const { data: trophies } = useFetch("trophies");
-    const { data: store } = useFetch("store");
+    const { data: results, isPending, error } = useFetch("esportTeams?type=results");
+    const { data: esportteams } = useFetch("esportTeams?type=teams");
+    const { data: trophies } = useFetch("achievements?type=trophies");
+    const { data: store } = useFetch("store?type=store");
+
 
 
     return (

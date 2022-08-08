@@ -28,7 +28,7 @@ const Trophies = ({ trophies }) => {
 
                     { trophies &&
                         trophies.map((trophie) => (
-                            <SwiperSlide key={ trophie.id }>
+                            <SwiperSlide>
                                 <div className="trophie">
                                     <div className="competition-image">
                                         <img src={ trophie.image } alt="" />

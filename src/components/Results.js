@@ -32,7 +32,7 @@ const Results = ({ results }) => {
 
 
                 { results.map((result) => (
-                    <SwiperSlide key={ result.id }>
+                    <SwiperSlide>
                         <div className="match row">
                             <div className="column left-column">
                                 <div className="match-status ">

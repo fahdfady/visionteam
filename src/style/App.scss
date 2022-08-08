@@ -156,12 +156,11 @@ header.page-header {
     left: 0;
     right: 0;
     @include centerAll();
-    gap: 20px;
 
     .logo {
         a {
             img {
-                width: 120px;
+                width: 96px;
                 height: unset;
                 user-select: none;
                 pointer-events: none;
@@ -171,6 +170,7 @@ header.page-header {
 
     nav {
         @include centerAll();
+        gap: 20px;
 
         ul {
             @include centerAll();

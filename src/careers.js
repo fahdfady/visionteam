@@ -2,7 +2,7 @@ import Positions from "./components/Positions";
 import useFetch from "./hooks/useFetch";
 
 const Careers = () => {
-    const { data: positions, isPending, error } = useFetch("positions");
+    const { data: positions, isPending, error } = useFetch("store?type=positions");
 
     return (
         <section className="careers">

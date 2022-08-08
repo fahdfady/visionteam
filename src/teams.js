@@ -4,7 +4,7 @@ import useFetch from "./hooks/useFetch";
 
 const TeamsPage = () => {
 
-    const { data: esportteams, error, isPending } = useFetch("esportTeams");
+    const { data: esportteams, error, isPending } = useFetch("esportTeams?type=teams");
 
     return (
         <div className="teams">

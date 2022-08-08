@@ -19,12 +19,12 @@ const Teams = ({ teams }) => {
             </div>
 
             <Swiper 
-                // spaceBetween={ 0 }
+                spaceBetween={ 50 }
                 slidesPerView={ 4 }
             >
 
                 { teams.map((team) => (
-                    <SwiperSlide key={ team.id }>
+                    <SwiperSlide>
                         <div className="team-list">
                             <Link to={ `/team/${team.game}` } className="team-list-card">
                                 <div className="team-list-img">
