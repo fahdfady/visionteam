@@ -4,7 +4,7 @@ import Stories from "./components/Stories";
 import useFetch from "./hooks/useFetch";
 
 const About = () => {
-    const { data: achievements, isPending, error } = useFetch("achievements?type=achievements");
+    const { data: achievements, isPending, error } = useFetch("Achievements?type=Achievements");
     const { data: socials } = useFetch("social");
 
     return (

@@ -8,7 +8,7 @@ import useFetch from "./hooks/useFetch";
 const Home = () => {
     const { data: results, isPending, error } = useFetch("esportTeams?type=results");
     const { data: esportteams } = useFetch("esportTeams?type=teams");
-    const { data: trophies } = useFetch("achievements?type=trophies");
+    const { data: trophies } = useFetch("Achievements?type=trophies");
     const { data: store } = useFetch("store?type=store");
 
 
