@@ -8,9 +8,11 @@ import Footer from './components/footer';
 import TeamsPage from './teams';
 import About from './about';
 import Careers from './careers';
+import useFetch from './hooks/useFetch';
 
 function App() {
 
+  const { data: socials, error, isPending } = useFetch("Achievements?type=socials");
 
   return (
     <BrowserRouter>
@@ -38,7 +40,11 @@ function App() {
           </main>
         </div>
 
-        <Footer />
+        { isPending && <div>Loading...</div> }
+
+        { error && <div>{ error }</div> }
+
+        { socials && <Footer socials={ socials } /> }
       </div>
     </BrowserRouter>
   )

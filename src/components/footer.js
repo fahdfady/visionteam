@@ -1,4 +1,5 @@
-const Footer = () => {
+const Footer = ({ socials }) => {
+
     return (
         <footer className="page-footer">
             <div className="footer-container">
@@ -7,25 +8,13 @@ const Footer = () => {
                 </p>
 
                 <ul className="social-media">
-
-                    <li>
-                        <a href="" target="_balnk">
-                            <i className="fab fa-facebook-square"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="" target="_balnk">
-                            <i className="fab fa-instagram"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="" target="_balnk">
-                            <i className="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
+                    { socials.map((social) => (
+                        <li>
+                            <a href={ social.link } target="_balnk">
+                                < i className={ "fa-brands fa-" + social.name } ></i>
+                            </a>
+                        </li>
+                    )) }
                 </ul>
 
                 <p className="email">

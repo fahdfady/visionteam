@@ -5,7 +5,7 @@ import useFetch from "./hooks/useFetch";
 
 const About = () => {
     const { data: achievements, isPending, error } = useFetch("Achievements?type=Achievements");
-    const { data: socials } = useFetch("social");
+    const { data: socials } = useFetch("Achievements?type=socials");
 
     return (
         <section className="about">

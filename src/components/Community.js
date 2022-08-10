@@ -9,7 +9,7 @@ const Community = ({ socials }) => {
             <nav className="socials">
 
                 { socials.map((social) => (
-                    <a href={ social.link } className="social" key={ social.id }>
+                    <a href={ social.link } className="social">
 
                         <div className="social-icon">
                             < i className={ "fa-brands fa-" + social.name } ></i>
