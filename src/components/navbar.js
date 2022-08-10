@@ -1,7 +1,16 @@
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.svg'
 
+function showNav() {
+    var x = document.querySelector("ul.links");
+    if (x.style.opacity === "1") {
+        x.style.opacity = "0";
+    } else {
+        x.style.opacity = "1";
+    }
+}
 const Navbar = () => {
+
     return (
         <header className="page-header">
             <nav>
@@ -27,6 +36,11 @@ const Navbar = () => {
                         <Link to="/careers">Careers</Link>
                     </li>
                 </ul>
+
+                <a href="#0" className="hamburger-button" onClick={ showNav }>
+                    <i className="fa fa-bars"></i>
+                </a>
+
             </nav>
 
         </header>

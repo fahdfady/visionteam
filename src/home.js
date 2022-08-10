@@ -1,5 +1,6 @@
 import Results from "./components/Results";
 import Store from "./components/store";
+import TeamPreview from "./components/TeamPreview";
 import Teams from "./components/Teamspreview";
 import Trophies from "./components/Trophies";
 
@@ -10,8 +11,7 @@ const Home = () => {
     const { data: esportteams } = useFetch("esportTeams?type=teams");
     const { data: trophies } = useFetch("Achievements?type=trophies");
     const { data: store } = useFetch("store?type=store");
-
-
+    const { data: staff } = useFetch("players?game=staff");
 
     return (
         <div className="home">
@@ -37,6 +37,8 @@ const Home = () => {
             { results && <Results results={ results } /> }
 
             { esportteams && <Teams teams={ esportteams } /> }
+
+            { staff && <TeamPreview staff={ staff } /> }
 
             { trophies && <Trophies trophies={ trophies } /> }
 

@@ -22,7 +22,7 @@ const Trophies = ({ trophies }) => {
             <div className="layer">
 
                 <Swiper
-                    
+
                     slidesPerView={ 4 }
                 >
 
@@ -31,7 +31,7 @@ const Trophies = ({ trophies }) => {
                             <SwiperSlide>
                                 <div className="trophie">
                                     <div className="competition-image">
-                                        <img src={ trophie.image } alt="" />
+                                        <img src={ trophie.image } alt={ trophie.competition } />
                                     </div>
 
                                     <h3>
