@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import useFetch from "./hooks/useFetch";
-import avatar from './assets/avatar.webp'
 import TeamPreview from "./components/TeamPreview";
 
 const Team = () => {
