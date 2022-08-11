@@ -53,7 +53,7 @@ const Results = ({ results }) => {
                             <div className="column score">
                                 <div className="home-team team">
                                     <div className="team-logo">
-                                        <img src={logo} />
+                                        <img alt="vision team" title="vision team" src={ logo } />
                                     </div>
                                     <div className="team-name">Vision</div>
                                 </div>
@@ -68,7 +68,7 @@ const Results = ({ results }) => {
 
                                 <div className="away-team team">
                                     <div className="team-logo">
-                                        <img src={ result.rivallogo } />
+                                        <img alt={ result.rival + " team" } title={ result.rival + " team" } src={ result.rivallogo } />
                                     </div>
                                     <div className="team-name">
                                         { result.rival }

@@ -332,7 +332,7 @@ header.page-header {
                 text-align: center;
 
                 .swiper-slide {
-                    @include centerY();
+                    @include centerAll();
                 }
             }
 
@@ -360,24 +360,24 @@ header.page-header {
                 padding-right: 14px;
                 padding-left: 14px;
 
-                &:after,
-                &:before {
-                    content: '';
-                    width: 1px;
-                    height: 100%;
-                    background-color: #8d8d8d;
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                }
+                // &:after,
+                // &:before {
+                //     content: '';
+                //     width: 1px;
+                //     height: 100%;
+                //     background-color: #8d8d8d;
+                //     display: block;
+                //     position: absolute;
+                //     top: 0;
+                // }
 
-                &:after {
-                    right: 7px;
-                }
+                // &:after {
+                //     right: 7px;
+                // }
 
-                &:before {
-                    left: 7px;
-                }
+                // &:before {
+                //     left: 7px;
+                // }
 
             }
 
@@ -712,7 +712,7 @@ header.page-header {
         }
 
         &.achievements {
-            height: 55vh;
+            min-height: 55vh;
             text-align: center;
             position: relative;
 
@@ -1269,6 +1269,22 @@ footer.page-footer {
             }
 
             &.results {
+                .match {
+                    @include centerY();
+                    flex-direction: column;
+                    gap: 30px;
+
+                    .left-column,
+                    .right-column {
+                        @include centerAll();
+                        flex-direction: column;
+                    }
+
+                    .watch {
+                        margin: 0px;
+                    }
+                }
+
                 .team {
                     height: 150px;
                 }
@@ -1314,9 +1330,11 @@ footer.page-footer {
                 }
             }
 
-            &.teams{
-                .game-name{
-                    display:none;
+            &.teams {
+
+                .game-name,
+                .btn {
+                    display: none;
                 }
             }
         }
@@ -1359,6 +1377,188 @@ footer.page-footer {
                 .container {
                     max-width: 100%;
                     padding: 0px;
+                }
+            }
+
+            &.trophies {
+                .trophie {
+                    h3 {
+                        font-size: 18px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
+
+                    .competition-image {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
+
+            &.community {
+                clip-path: unset;
+            }
+        }
+    }
+
+    footer.page-footer {
+        font-size: 14px;
+
+        ul.social-media {
+            li {
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:421px) {
+    header.page-header {
+
+        nav {
+
+            ul {
+                gap: 20px;
+
+                li {
+                    a {
+                        font-size: 18px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .page-body {
+        section {
+            &.banner {
+                .layer {
+                    h2 {
+                        font-size: 82px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            &.trophies {
+                .trophie {
+                    h3 {
+                        font-size: 14px;
+                    }
+
+                    p {
+                        font-size: 10px;
+                    }
+
+                    .competition-image {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+
+            &.stories {
+                .story {
+                    width: calc(33% - 10px);
+
+                    .story-icon {
+                        font-size: 50px;
+
+                        &::before {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+
+                    .story-title {
+                        font-size: 18px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        padding: 0;
+                    }
+                }
+            }
+
+        }
+
+        .section-title {
+            h2 {
+                font-size: 38px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .positions {
+
+        .position {
+            width: calc(50% - 8px);
+            margin: 6px 0px;
+            padding: 12px 8px;
+
+            .remaining,
+            .position-title {
+                font-size: 20px;
+            }
+
+            .icon {
+                font-size: 56px;
+            }
+
+            .position-description {
+                font-size: 10px;
+            }
+
+            &:hover {
+                * {
+                    color: var(--primary-color);
+                }
+
+                .position-description {
+                    color: #ffe9da;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:360px) {
+    .page-body {
+        section {
+            &.stories {
+                .story {
+                    width: calc(50% - 10px);
+
+                    .story-icon {
+                        font-size: 50px;
+
+                        &::before {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+
+                    .story-title {
+                        font-size: 18px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        padding: 0;
+                    }
                 }
             }
         }

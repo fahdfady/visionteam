@@ -343,6 +343,9 @@ header.page-header nav ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -382,24 +385,6 @@ header.page-header nav ul li a:hover {
   position: relative;
   padding-right: 14px;
   padding-left: 14px;
-}
-
-.page-body section.results .match .score:after, .page-body section.results .match .score:before {
-  content: '';
-  width: 1px;
-  height: 100%;
-  background-color: #8d8d8d;
-  display: block;
-  position: absolute;
-  top: 0;
-}
-
-.page-body section.results .match .score:after {
-  right: 7px;
-}
-
-.page-body section.results .match .score:before {
-  left: 7px;
 }
 
 .page-body section.results .team {
@@ -846,7 +831,7 @@ header.page-header nav ul li a:hover {
 }
 
 .page-body section.achievements {
-  height: 55vh;
+  min-height: 55vh;
   text-align: center;
   position: relative;
 }
@@ -1432,6 +1417,38 @@ footer.page-footer ul.social-media li a:hover {
   .page-body section.trophies .trophie p {
     font-size: 14px;
   }
+  .page-body section.results .match {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .page-body section.results .match .left-column,
+  .page-body section.results .match .right-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page-body section.results .match .watch {
+    margin: 0px;
+  }
   .page-body section.results .team {
     height: 150px;
   }
@@ -1458,7 +1475,8 @@ footer.page-footer ul.social-media li a:hover {
   .page-body section.team .players-list .player-card .player-socials ul li a {
     font-size: 14px;
   }
-  .page-body section.teams .game-name {
+  .page-body section.teams .game-name,
+  .page-body section.teams .btn {
     display: none;
   }
   .team-list-content h3,
@@ -1480,6 +1498,115 @@ footer.page-footer ul.social-media li a:hover {
   .page-body section.about .container {
     max-width: 100%;
     padding: 0px;
+  }
+  .page-body section.trophies .trophie h3 {
+    font-size: 18px;
+  }
+  .page-body section.trophies .trophie p {
+    font-size: 12px;
+  }
+  .page-body section.trophies .trophie .competition-image {
+    width: 80px;
+    height: 80px;
+  }
+  .page-body section.community {
+    -webkit-clip-path: unset;
+            clip-path: unset;
+  }
+  footer.page-footer {
+    font-size: 14px;
+  }
+  footer.page-footer ul.social-media li a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 421px) {
+  header.page-header nav ul {
+    gap: 20px;
+  }
+  header.page-header nav ul li a {
+    font-size: 18px;
+  }
+  .page-body section.banner .layer h2 {
+    font-size: 82px;
+  }
+  .page-body section.banner .layer p {
+    font-size: 14px;
+  }
+  .page-body section.trophies .trophie h3 {
+    font-size: 14px;
+  }
+  .page-body section.trophies .trophie p {
+    font-size: 10px;
+  }
+  .page-body section.trophies .trophie .competition-image {
+    width: 50px;
+    height: 50px;
+  }
+  .page-body section.stories .story {
+    width: calc(33% - 10px);
+  }
+  .page-body section.stories .story .story-icon {
+    font-size: 50px;
+  }
+  .page-body section.stories .story .story-icon::before {
+    width: 40px;
+    height: 40px;
+  }
+  .page-body section.stories .story .story-title {
+    font-size: 18px;
+  }
+  .page-body section.stories .story p {
+    font-size: 12px;
+    padding: 0;
+  }
+  .page-body .section-title h2 {
+    font-size: 38px;
+  }
+  .page-body .section-title p {
+    font-size: 12px;
+  }
+  .positions .position {
+    width: calc(50% - 8px);
+    margin: 6px 0px;
+    padding: 12px 8px;
+  }
+  .positions .position .remaining,
+  .positions .position .position-title {
+    font-size: 20px;
+  }
+  .positions .position .icon {
+    font-size: 56px;
+  }
+  .positions .position .position-description {
+    font-size: 10px;
+  }
+  .positions .position:hover * {
+    color: var(--primary-color);
+  }
+  .positions .position:hover .position-description {
+    color: #ffe9da;
+  }
+}
+
+@media (max-width: 360px) {
+  .page-body section.stories .story {
+    width: calc(50% - 10px);
+  }
+  .page-body section.stories .story .story-icon {
+    font-size: 50px;
+  }
+  .page-body section.stories .story .story-icon::before {
+    width: 40px;
+    height: 40px;
+  }
+  .page-body section.stories .story .story-title {
+    font-size: 18px;
+  }
+  .page-body section.stories .story p {
+    font-size: 12px;
+    padding: 0;
   }
 }
 /*# sourceMappingURL=App.css.map */

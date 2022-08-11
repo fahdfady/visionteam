@@ -89,9 +89,23 @@
             "instagram": ""
         }
     ],
-    "results": [
+    "esportTeams": [
         {
-            "id": 1,
+            "game": "valorant",
+            "image": "https://wallpaperaccess.com/full/3911016.png",
+            "type": "teams"
+        },
+        {
+            "game": "league of legends",
+            "image": "https://i.pinimg.com/originals/53/48/84/5348848cd024f0fe06b5f126a5034250.jpg",
+            "type": "teams"
+        },
+        {
+            "game": "league of legends",
+            "image": "https://i.pinimg.com/originals/53/48/84/5348848cd024f0fe06b5f126a5034250.jpg",
+            "type": "teams"
+        },
+        {
             "rival": "Anubis",
             "rivallogo": "https://www.anubisgaming.com/content/uploads/2022/11/main-home-logo-2.png",
             "date": "22/4/2022",
@@ -101,10 +115,10 @@
             "status": "result",
             "state": "win",
             "visscore": 3,
-            "rivalscore": 2
+            "rivalscore": 2,
+            "type": "results"
         },
         {
-            "id": 2,
             "rival": "Anubis",
             "rivallogo": "https://www.anubisgaming.com/content/uploads/2022/11/main-home-logo-2.png",
             "date": "25/2/2022",
@@ -114,10 +128,10 @@
             "status": "result",
             "state": "loss",
             "visscore": 1,
-            "rivalscore": 3
+            "rivalscore": 3,
+            "type": "results"
         },
         {
-            "id": 3,
             "rival": "Ra'ad",
             "rivallogo": "https://www.anubisgaming.com/content/uploads/2022/teams/iac/RA_AD.png",
             "date": "22/3/2022",
@@ -127,10 +141,10 @@
             "status": "result",
             "state": "loss",
             "visscore": 2,
-            "rivalscore": 3
+            "rivalscore": 3,
+            "type": "results"
         },
         {
-            "id": 4,
             "rival": "3BL",
             "rivallogo": "https://www.anubisgaming.com/content/uploads/2022/teams/iac/3BL%20Esports.png",
             "date": "22/4/2022",
@@ -140,10 +154,10 @@
             "status": "result",
             "state": "win",
             "visscore": 3,
-            "rivalscore": 0
+            "rivalscore": 0,
+            "type": "results"
         },
         {
-            "id": 5,
             "rival": "Fox Gaming",
             "rivallogo": "https://www.anubisgaming.com/content/uploads/2022/teams/iac/Fox%20Gaming.png",
             "date": "22/2/2022",
@@ -153,193 +167,183 @@
             "status": "upcoming",
             "state": "unknown",
             "visscore": "-",
-            "rivalscore": "-"
-        }
-    ],
-    "esportTeams": [
-        {
-            "id": 1,
-            "game": "valorant",
-            "image": "https://wallpaperaccess.com/full/3911016.png"
-        },
-        {
-            "id": 2,
-            "game": "league of legends",
-            "image": "https://i.pinimg.com/originals/53/48/84/5348848cd024f0fe06b5f126a5034250.jpg"
-        },
-        {
-            "id": 3,
-            "game": "league of legends",
-            "image": "https://i.pinimg.com/originals/53/48/84/5348848cd024f0fe06b5f126a5034250.jpg"
-        }
-    ],
-    "trophies": [
-        {
-            "id": 1,
-            "game": "valorant",
-            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
-            "competition": "IAC",
-            "season": "season 2",
-            "place": "2nd place"
-        },
-        {
-            "id": 2,
-            "game": "league of legends",
-            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
-            "competition": "Qlash",
-            "season": "2022",
-            "place": "1st place"
-        },
-        {
-            "id": 3,
-            "game": "valorant",
-            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
-            "competition": "IAC",
-            "season": "season 2",
-            "place": "2nd place"
+            "rivalscore": "-",
+            "type": "results"
         }
     ],
     "Achievements": [
         {
             "id": 1,
             "name": "teams",
-            "number": "2"
+            "number": "2",
+            "type": "achievements"
         },
         {
             "id": 2,
             "name": "1st places",
-            "number": "3"
+            "number": "3",
+            "type": "achievements"
         },
         {
             "id": 3,
             "name": "rewards",
-            "number": "5"
+            "number": "5",
+            "type": "achievements"
         },
         {
             "id": 4,
             "name": "fans",
-            "number": "3K"
-        }
-    ],
-    "social": [
+            "number": "3K",
+            "type": "achievements"
+        },
         {
-            "id": 1,
+            "game": "valorant",
+            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
+            "competition": "IAC",
+            "season": "season 2",
+            "place": "2nd place",
+            "type": "trophies"
+        },
+        {
+            "game": "league of legends",
+            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
+            "competition": "Qlash",
+            "season": "2022",
+            "place": "1st place",
+            "type": "trophies"
+        },
+        {
+            "game": "valorant",
+            "image": "https://resources.esportsinsider.com/esportsinsider/2020/06/Image_by_GLOOT_15-1.jpg",
+            "competition": "IAC",
+            "season": "season 2",
+            "place": "2nd place",
+            "type": "trophies"
+        },
+        {
             "name": "facebook",
             "followers": "200",
-            "link": "https://www.google.com"
+            "link": "https://www.google.com",
+            "type": "socials"
         },
         {
-            "id": 2,
             "name": "twitter",
             "followers": "200",
-            "link": "https://www.google.com"
+            "link": "https://www.google.com",
+            "type": "socials"
         },
         {
-            "id": 3,
             "name": "instagram",
             "followers": "18k",
-            "link": "https://www.google.com"
+            "link": "https://www.google.com",
+            "type": "socials"
         },
         {
-            "id": 4,
             "name": "twitch",
             "followers": "2k",
-            "link": "https://www.google.com"
+            "link": "https://www.google.com",
+            "type": "socials"
         },
         {
-            "id": 5,
             "name": "youtube",
             "followers": "200",
-            "link": "https://www.google.com"
+            "link": "https://www.google.com",
+            "type": "socials"
         },
         {
-            "id": 6,
             "name": "tiktok",
             "followers": "200",
-            "link": "https://www.google.com"
+            "link": "https://www.google.com",
+            "type": "socials"
         },
         {
-            "id": 7,
             "name": "discord",
             "followers": "200",
-            "link": "https://www.google.com"
+            "link": "https://www.google.com",
+            "type": "socials"
         }
     ],
     "store": [
         {
             "id": 1,
             "product": "merch",
-            "type": "t-shirt",
+            "producttype": "t-shirt",
             "price": "300 EGP",
-            "image": "https://i.ibb.co/g4bHtcs/Bandana.png"
+            "image": "https://i.ibb.co/g4bHtcs/Bandana.png",
+            "type": "store"
         },
         {
             "id": 2,
             "product": "action figure",
             "type": "figure",
             "price": "500 EGP",
-            "image": "https://i.ibb.co/kBCrMDS/Hoodie1.png"
+            "image": "https://i.ibb.co/kBCrMDS/Hoodie1.png",
+            "type": "store"
         },
         {
             "id": 3,
             "product": "merch",
             "type": "t-shirt",
             "price": "300 EGP",
-            "image": "https://i.ibb.co/0XG871b/Cap.png"
+            "image": "https://i.ibb.co/0XG871b/Cap.png",
+            "type": "store"
         },
         {
             "id": 4,
             "product": "action figure",
             "type": "figure",
             "price": "500 EGP",
-            "image": "https://i.ibb.co/S67JrPx/Ice-Cap.png"
+            "image": "https://i.ibb.co/S67JrPx/Ice-Cap.png",
+            "type": "store"
         },
         {
             "id": 5,
             "product": "merch",
             "type": "t-shirt",
             "price": "300 EGP",
-            "image": "https://i.ibb.co/dmG6VMQ/Jersey1.png"
+            "image": "https://i.ibb.co/dmG6VMQ/Jersey1.png",
+            "type": "store"
         },
         {
             "id": 6,
             "product": "action figure",
             "type": "figure",
             "price": "500 EGP",
-            "image": "https://i.ibb.co/kGRnw50/Jersey3.png"
+            "image": "https://i.ibb.co/kGRnw50/Jersey3.png",
+            "type": "store"
         },
         {
             "id": 7,
             "product": "action figure",
             "type": "figure",
             "price": "500 EGP",
-            "image": "https://i.ibb.co/CtpQ2qG/Jersey2.png"
-        }
-    ],
-    "positions": [
+            "image": "https://i.ibb.co/CtpQ2qG/Jersey2.png",
+            "type": "store"
+        },
         {
-            "id": 1,
+            "https://app.getpostman.com/join-team?invite_code=8941f39a364352c52b994b709df1c151": "https://app.getpostman.com/join-team?invite_code=8941f39a364352c52b994b709df1c151",
             "name": "designer",
             "remaining": "3",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum molestiae ut quasi quibusdam corporis maiores nisi."
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum molestiae ut quasi quibusdam corporis maiores nisi.",
+            "type": "positions"
         },
         {
-            "id": 2,
             "name": "designer",
             "remaining": "2",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum molestiae ut quasi quibusdam corporis maiores nisi."
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum molestiae ut quasi quibusdam corporis maiores nisi.",
+            "type": "positions"
         },
         {
-            "id": 3,
             "name": "designer",
             "remaining": "4",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum molestiae ut quasi quibusdam corporis maiores nisi."
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum molestiae ut quasi quibusdam corporis maiores nisi.",
+            "type": "positions"
         },
         {
-            "id": 4,
             "name": "designer",
             "remaining": "-",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum molestiae ut quasi quibusdam corporis maiores nisi."
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum molestiae ut quasi quibusdam corporis maiores nisi.",
+            "type": "positions"
         }
     ]
 }
