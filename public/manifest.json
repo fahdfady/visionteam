@@ -1,5 +1,16 @@
 {
   "short_name": "Vision E-Sports",
   "name": "Vision E-Sports Teams Website",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "background_color": "#363636",
+  "scope": "/",
+  "display": "standalone",
   "theme_color": "#efc87b"
 }
